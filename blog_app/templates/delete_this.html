@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+{% load static %}
+<link rel="stylesheet" href="{% static 'edit_blog_html.css' %}">
+
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <form class="" action="{% url 'delete_blog_confirm' %}" method="post">
+      <h2>{{ blogs.title }}</h2>
+      <h3>{{ blogs.blog }}</h3>
+      {% csrf_token %}
+      <input type="hidden" name="id" value="{{ blogs.blog_id }}">
+      <button type="submit" name="button">Delete</button>
+    </form>
+  </body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+{% load static %}
+<link rel="stylesheet" href="{% static 'edit.css' %}">
+<script type="text/javascript">
+  function function_1(value_1){
+    window.location.href = '{% url "edit_blog_1" value_1=0 %}'.replace('0', value_1);
+  };
+</script>
+<head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+      <h1>Your Blogs</h1>
+      <div class="hello">
+      {% if no_found %}
+      <p>you dont have any blogs</p>
+      {% else %}
+      {% for users in user %}
+      <form class="" action="{% url 'edit_blog_2' %}" method="post">
+        {% csrf_token %}
+        <p> {{ users.title }}</p>
+        <input type="hidden" name="id" value="{{ users.blog_id }}">
+        <button type="submit" class="button1" name="button">Edit</button>
+      </form>
+      {% endfor %}
+      {% endif %}
+      </div>
+  </body>
+</html>

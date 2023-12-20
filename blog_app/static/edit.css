@@ -1,0 +1,56 @@
+/* Add this CSS to style your HTML */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #544848;
+    margin: 0;
+    padding: 20;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+h1 {
+    color: white;
+}
+
+.hello {
+    background: #fff;
+    padding: 20px;
+    margin-top: 10%;
+    border-radius: 10px;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
+    max-width: 300px;
+    width: 100%;
+}
+
+p {
+    margin: 0;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-bottom: 10px;
+}
+
+.button1 {
+    width: 100%;
+    padding: 10px;
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.button1:hover {
+    background-color: #45a049;
+}
+
+.button1:active {
+    background-color: #39833e;
+    color: #fff;
+}

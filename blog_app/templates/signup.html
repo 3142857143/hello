@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+{% load static %}
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="{% static 'signup.css' %}">
+  </head>
+  <body>
+    <form class="" action="{% url 'signup_user' %}" method="post">
+    {% csrf_token %}
+
+      <label for="username">Username</label>
+      <br>
+      <input type="text" name="username" value="" required>
+      <br>
+      <label for="email">Email</label>
+      <br>
+      <input type="email" name="email" value="" required>
+      <br>
+      <label for="password">Password</label>
+      <br>
+      <input type="password" name="password" value=""required>
+      <br>
+      <button type="submit" name="button">Submit</button>
+      {% if error %}
+          <h1 id='error_one'> {{ error }}</h1>
+      {% endif %}
+    </form>
+  </body>
+</html>

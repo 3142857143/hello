@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+{% load static %}
+<link rel="stylesheet" href="{% static 'page_1.css' %}">
+<!--<script src="{% static 'page_1.css' %}" charset="utf-8"></script>
+--><script type="text/javascript">
+    function function_1(){
+      const blog_form = document.getElementById('new_form1');
+      if(blog_form.style.display == 'block'){
+        blog_form.style.display = 'none';
+      }
+      else {
+        blog_form.style.display = 'block';
+      }
+    };
+    function function_2(){
+      window.location.href = '{% url "edit_blog" %}';
+    }
+    function function_3(){
+      window.location.href = '{% url "delete_blog" %}';
+    }
+</script>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+
+    <button onclick="function_1()" type="button" id="button1" name="button">Create</button>
+    <form id="new_form1" class="new_form" action="{% url 'add_blog' %}" method="post">
+    {% csrf_token %}
+        <label for="title">Title</label>
+        <br>
+        <input type="text" name="title" value="">
+        <br>
+        <label for="blog">Blog</label>
+        <br>
+        <textarea name="blog" rows="8" cols="80"></textarea>
+        <br>
+        <button type="submit" name="button">Submit</button>
+        <button onclick="function_1()" type="button" name="button">x</button>
+    </form>
+    <button onclick="function_2()" type="button" name="button1" id="button2">Edit</button>
+    <button onclick="function_3()" type="button" name="button">Delete</button>
+  </body>
+</html>

@@ -1,0 +1,80 @@
+/* Add this CSS to style your HTML */
+/* Add this CSS to style your HTML */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #544848;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+button {
+    padding: 10px;
+    margin: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#new_form1 {
+    display: none;
+    background: #fff;
+    padding: 20px;
+    margin-top: 10%;
+    border-radius: 10px;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
+    max-width: 300px;
+    width: 100%;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button[type="submit"],
+button[type="button"] {
+    width: 100%;
+    padding: 10px;
+    background-color: black;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover,
+button[type="button"]:hover {
+    background-color: #45a049;
+}
+
+#button1:hover,
+#button2:hover,
+#button3:hover {
+    background-color: #008CBA;
+    color: #fff;
+}
+
+#button1,
+#button2,
+#button3 {
+    background-color: black;
+    color: #fff;
+}
+
+#button3:hover {
+    background-color: #DC3545;
+    color: #fff;
+}

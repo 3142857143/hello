@@ -1,0 +1,75 @@
+body {
+  background-color: #544848;
+}
+#one {
+  color: white;
+  font-family: 'Island Moments';
+  font-size: 200px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  position: absolute;
+  left: 250px;
+  top: 100px;
+}
+#button2 {
+  text-decoration: none;
+  color: #4A4545;
+  background-color: white;
+  padding: 10px;
+  padding-top: 2px;
+  border-radius: 24px;
+  font-family: Itim;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  position: absolute;
+  left: 630px;
+  top: 500px;
+}
+#button2:hover {
+  text-decoration: none;
+  color: white;
+  background-color: #544848;
+  padding: 10px;
+  padding-top: 2px;
+  border-radius: 24px;
+  font-family: Itim;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+#button1:hover {
+  text-decoration: none;
+  color: white;
+  background-color: #544848;
+  padding: 10px;
+  padding-top: 2px;
+  border-radius: 24px;
+  font-family: Itim;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  position: absolute;
+  left: 450px;
+  top: 500px;
+}
+#button1 {
+  text-decoration: none;
+  color: #544848;
+  background-color: white;
+  padding: 10px;
+  padding-top: 2px;
+  border-radius: 24px;
+  font-family: Itim;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  position: absolute;
+  left: 450px;
+  top: 500px;
+}
